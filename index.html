@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROJTAC | Rojava Tactical News & Analysis</title>
+  
+  <!-- ربط ملف التنسيقات الخارجية CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- ربط الخطوط من Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <span class="live-badge"><span class="live-dot"></span> مباشر / LIVE</span>
+          <span id="current-date">الجمعة، 23 أكتوبر 2026</span>
+        </div>
+        <div class="top-bar-right">
+          <button class="btn-lang" id="lang-toggle" onclick="toggleLanguage()">English</button>
+        </div>
+      </div>
+
+      <div class="main-header">
+        <div class="logo">
+          <div class="logo-badge">ROJTAC</div>
+          <div class="logo-text">ROJAVA TACTICAL</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticker -->
+    <div class="ticker-bar">
+      <div class="ticker-title" id="ticker-label">عاجل</div>
+      <div class="ticker-content" id="ticker-text">
+        قوات مكافحة الإرهاب تطلق عملية أمنية استباقية لملاحقة خلايا داعش التكفيرية...
+      </div>
+    </div>
+
+    <!-- Navigation Categories -->
+    <nav class="nav-categories">
+      <div class="container">
+        <ul>
+          <li><a href="#" id="cat-1">كردستان (الأجزاء الأربعة)</a></li>
+          <li><a href="#" id="cat-2">حركة الحرية</a></li>
+          <li><a href="#" id="cat-3">الدول الإقليمية</a></li>
+          <li><a href="#" id="cat-4">ملف داعش والتطرف</a></li>
+          <li><a href="#" id="cat-5">الأرشيف الحقوقي</a></li>
+          <li><a href="#" id="cat-6">تحليلات وآراء</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="container">
+    <div class="main-layout">
+      
+      <!-- Main Content Area -->
+      <section class="content-area">
+        
+        <!-- Hero Featured Article -->
+        <article class="hero-news">
+          <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80" alt="News Image" class="hero-img">
+          <div class="hero-content">
+            <span class="category-tag" id="hero-cat">ميداني / مكافحة الإرهاب</span>
+            <h1 class="hero-title" id="hero-title">
+              عملية أمنية خاصة تستهدف قادة بارزين من تنظيم داعش في ريف الحسكة
+            </h1>
+            <p class="hero-desc" id="hero-desc">
+              نفذت الوحدات الخاصة عملية خاطفة بالتنسيق مع التحالف الدولي أسفرت عن تفكيك شبكة لجمع الأموال والتخطيط للهجمات.
+            </p>
+          </div>
+        </article>
+
+        <!-- News Grid -->
+        <div class="news-grid">
+          
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" alt="News">
+            <div class="news-card-body">
+              <span class="category-tag">تحليلات</span>
+              <h3 class="news-card-title" id="card1-title">دراسة حول استراتيجية التغيير الديمغرافي في المناطق المحتلة</h3>
+              <p class="news-card-desc" id="card1-desc">توثيق شامل بالخرائط والمستندات لأهم الانتهاكات والتهجير القسري للمدنيين.</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?auto=format&fit=crop&w=600&q=80" alt="News">
+            <div class="news-card-body">
+              <span class="category-tag">الدول الإقليمية</span>
+              <h3 class="news-card-title" id="card2-title">تصعيد الهجمات بالطائرات المسيرة الإقليمية على البنية التحتية</h3>
+              <p class="news-card-desc" id="card2-desc">استهداف محطات الكهرباء والماء يتسبب في أزمة إنسانية متصاعدة للمواطنين.</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        
+        <!-- Telegram & Twitter Links Widget -->
+        <div class="widget">
+          <div class="widget-title">
+            <span id="social-widget-title">القنوات الرسمية</span>
+            <span class="live-badge">تحديث فوري</span>
+          </div>
+
+          <!-- Telegram Channel -->
+          <div class="channel-box channel-telegram">
+            <div>
+              <strong style="display:block;">قناة التليجرام</strong>
+              <small style="color: var(--text-muted);">الأخبار العاجلة والبيانات</small>
+            </div>
+            <a href="https://t.me" target="_blank" class="btn-channel btn-tg">انضمام</a>
+          </div>
+
+          <!-- Twitter (X) Channel -->
+          <div class="channel-box channel-twitter">
+            <div>
+              <strong style="display:block;">حساب تويتر (X)</strong>
+              <small style="color: var(--text-muted);">التغطية باللغة الإنجليزية</small>
+            </div>
+            <a href="https://x.com" target="_blank" class="btn-channel btn-tw">متابعة</a>
+          </div>
+        </div>
+
+        <!-- Latest Updates List Widget -->
+        <div class="widget">
+          <div class="widget-title" id="sidebar-latest-title">آخر التحديثات</div>
+          <ul style="list-style: none; display:flex; flex-direction:column; gap: 12px; font-size: 0.9rem;">
+            <li style="border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+              <span style="color: var(--cnn-red); font-weight: bold;">14:30</span> - إحباط محاولة تسلل لخلايا متطرفة شرق الفرات.
+            </li>
+            <li style="border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+              <span style="color: var(--cnn-red); font-weight: bold;">12:15</span> - صدور التقرير الحقوقي السنوي لتوثيق الانتهاكات.
+            </li>
+            <li>
+              <span style="color: var(--cnn-red); font-weight: bold;">09:00</span> - بيان رسمي حول نتائج التنسيق الميداني ضد الإرهاب.
+            </li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div>
+          <div class="logo-badge" style="display:inline-block; margin-bottom: 10px;">ROJTAC</div>
+          <p id="footer-desc">منصة إخبارية مستقلة توثق التطورات الميدانية والسياسية في كردستان والشرق الأوسط.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 ROJTAC (Rojava Tactical). جميع الحقوق محفوظة.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ربط ملف الجافاسكريبت الخارجي -->
+  <script src="script.js"></script>
+</body>
+</html>
